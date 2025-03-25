@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonio Monzó | Desarrollador Full Stack</title>
-    <meta name="description" content="Portfolio de Antonio Monzó, desarrollador web y móvil full stack especializado en soluciones escalables">
+    <meta name="description"
+        content="Portfolio de Antonio Monzó, desarrollador web y móvil full stack especializado en soluciones escalables">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -48,7 +49,9 @@
         }
 
         /* Tipografía */
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: var(--white);
             line-height: 1.2;
         }
@@ -270,12 +273,19 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0) translateX(-50%);
             }
+
             40% {
                 transform: translateY(-20px) translateX(-50%);
             }
+
             60% {
                 transform: translateY(-10px) translateX(-50%);
             }
@@ -760,6 +770,32 @@
                 flex-direction: column;
                 gap: 0.3rem;
             }
+
+            footer {
+                padding: 1.5rem 0;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 0.8rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .footer-links a {
+                padding: 0.5rem 0;
+                border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-links a:last-child {
+                border-bottom: none;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+                margin-bottom: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -770,7 +806,7 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">Antonio<span> Monzó</span></a>
-                
+
                 <div class="nav-links">
                     <a href="#hero">Inicio</a>
                     <a href="#about">Sobre mí</a>
@@ -780,7 +816,7 @@
                     <a href="#skills">Habilidades</a>
                     <a href="#contact">Contacto</a>
                 </div>
-                
+
                 <button class="hamburger">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -788,7 +824,7 @@
         </div>
     </header>
 
-    
+
     <section id="hero">
         <div class="container">
             <div class="hero-content fade-in">
@@ -798,7 +834,8 @@
                     <h4>Hola, mi nombre es</h4>
                     <h1>Antonio Monzó.</h1>
                     <h2>Desarrollo soluciones web y móviles.</h2>
-                    <p>Soy un desarrollador full stack especializado en crear aplicaciones web y móviles modernas, escalables y centradas en el usuario.</p>
+                    <p>Soy un desarrollador full stack especializado en crear aplicaciones web y móviles modernas,
+                        escalables y centradas en el usuario.</p>
                     <div class="hero-btns">
                         <a href="#projects" class="btn btn-primary">Ver proyectos</a>
                         <a href="#contact" class="btn">Contactar</a>
@@ -814,16 +851,21 @@
         </div>
     </section>
 
-    
+
     <section id="about">
         <div class="container">
             <div class="about-content fade-in">
                 <div class="about-text">
                     <h2>Sobre mí</h2>
-                    <p>¡Hola! Soy Antonio, un apasionado desarrollador full stack con experiencia en la creación de aplicaciones web y móviles modernas y eficientes. Mi enfoque combina el diseño atractivo con la funcionalidad robusta para ofrecer experiencias de usuario excepcionales.</p>
-                    <p>Me especializo en JavaScript, React, PHP y Kotlin para desarrollo móvil, pero siempre estoy aprendiendo nuevas tecnologías para mantenerme actualizado en este campo en constante evolución.</p>
-                    <p>Cuando no estoy programando, disfruto de los videojuegos, la lectura y aprender sobre nuevas tecnologías.</p>
-                    
+                    <p>¡Hola! Soy Antonio, un apasionado desarrollador full stack con experiencia en la creación de
+                        aplicaciones web y móviles modernas y eficientes. Mi enfoque combina el diseño atractivo con la
+                        funcionalidad robusta para ofrecer experiencias de usuario excepcionales.</p>
+                    <p>Me especializo en JavaScript, React, PHP y Kotlin para desarrollo móvil, pero siempre estoy
+                        aprendiendo nuevas tecnologías para mantenerme actualizado en este campo en constante evolución.
+                    </p>
+                    <p>Cuando no estoy programando, disfruto de los videojuegos, la lectura y aprender sobre nuevas
+                        tecnologías.</p>
+
                     <h3 style="margin-top: 2rem;">Tecnologías que utilizo:</h3>
                     <div class="skills-list">
                         <div class="skill-item">
@@ -852,7 +894,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="about-image">
                     <img src="img/perfil2.jpg" alt="Sobre Antonio Monzó">
                 </div>
@@ -860,13 +902,13 @@
         </div>
     </section>
 
-    
+
     <section id="experience">
         <div class="container">
             <div class="fade-in">
                 <h2>Experiencia Profesional</h2>
                 <p>Mi trayectoria profesional y los proyectos en los que he participado.</p>
-                
+
                 <div class="experience-item">
                     <div class="experience-header">
                         <h3 class="experience-title">Desarrollador Full Stack</h3>
@@ -874,7 +916,8 @@
                     </div>
                     <div class="experience-company">Freelance</div>
                     <div class="experience-description">
-                        <p>Desarrollo de aplicaciones web personalizadas para clientes, implementando soluciones frontend y backend según sus necesidades específicas.</p>
+                        <p>Desarrollo de aplicaciones web personalizadas para clientes, implementando soluciones
+                            frontend y backend según sus necesidades específicas.</p>
                     </div>
                     <div class="experience-tech">
                         <span class="tech-item">JavaScript</span>
@@ -883,7 +926,7 @@
                         <span class="tech-item">MySQL</span>
                     </div>
                 </div>
-                
+
                 <div class="experience-item">
                     <div class="experience-header">
                         <h3 class="experience-title">Programador/diseñador web</h3>
@@ -891,7 +934,8 @@
                     </div>
                     <div class="experience-company">BJDRONES</div>
                     <div class="experience-description">
-                        <p>Desarrollé por completo el sitio web de la empresa y gestioné los equipos (drones y cámaras), manteniendo un contacto constante con el cliente.</p>
+                        <p>Desarrollé por completo el sitio web de la empresa y gestioné los equipos (drones y cámaras),
+                            manteniendo un contacto constante con el cliente.</p>
                     </div>
                     <div class="experience-tech">
                         <span class="tech-item">HTML5</span>
@@ -904,22 +948,23 @@
         </div>
     </section>
 
-    
+
     <section id="projects">
         <div class="container">
             <div class="fade-in">
                 <h2>Proyectos destacados</h2>
                 <p>Aquí tienes algunos de mis proyectos recientes. Todos están disponibles en mi perfil de GitHub.</p>
-                
+
                 <div class="projects-grid">
-                    
+
                     <div class="project-card">
                         <div class="project-image">
                             <img src="img/fla3.PNG" alt="Flappy Bird">
                         </div>
                         <div class="project-info">
                             <h3>Flappy Bird</h3>
-                            <p>Una réplica del clásico juego Flappy Bird desarrollado con JavaScript puro y HTML5 Canvas.</p>
+                            <p>Una réplica del clásico juego Flappy Bird desarrollado con JavaScript puro y HTML5
+                                Canvas.</p>
                             <div class="project-tech">
                                 <span class="tech-item">JavaScript</span>
                                 <span class="tech-item">HTML5</span>
@@ -931,15 +976,16 @@
                             </a>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="project-card">
                         <div class="project-image">
                             <img src="img/tiempo.PNG" alt="App del Tiempo">
                         </div>
                         <div class="project-info">
                             <h3>App del Tiempo</h3>
-                            <p>Aplicación web que muestra el pronóstico del tiempo utilizando la API de OpenWeatherMap.</p>
+                            <p>Aplicación web que muestra el pronóstico del tiempo utilizando la API de OpenWeatherMap.
+                            </p>
                             <div class="project-tech">
                                 <span class="tech-item">JavaScript</span>
                                 <span class="tech-item">API REST</span>
@@ -950,15 +996,16 @@
                             </a>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="project-card">
                         <div class="project-image">
                             <img src="img/poke3.PNG" alt="Pokédex">
                         </div>
                         <div class="project-info">
                             <h3>Pokédex</h3>
-                            <p>Una Pokédex interactiva que consume la API de Pokémon para mostrar información detallada.</p>
+                            <p>Una Pokédex interactiva que consume la API de Pokémon para mostrar información detallada.
+                            </p>
                             <div class="project-tech">
                                 <span class="tech-item">JavaScript</span>
                                 <span class="tech-item">PokéAPI</span>
@@ -970,9 +1017,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div style="text-align: center; margin-top: 3rem;">
-                    <a href="https://github.com/AntonioMonzo4" class="btn btn-primary" target="_blank">Ver más en GitHub</a>
+                    <a href="https://github.com/AntonioMonzo4" class="btn btn-primary" target="_blank">Ver más en
+                        GitHub</a>
                 </div>
             </div>
         </div>
@@ -984,51 +1032,55 @@
             <div class="fade-in">
                 <h2>Educación y Certificaciones</h2>
                 <p>Mi trayectoria académica y los cursos que han formado mi perfil profesional.</p>
-                
+
                 <div class="timeline">
-                    
+
                     <div class="timeline-item">
                         <div class="timeline-date">2023 - 2025</div>
                         <h3 class="timeline-title">Grado Superior en Desarrollo de Aplicaciones Web</h3>
                         <div class="timeline-location">IES Juan de Herrera</div>
-                        <p class="timeline-description">Formación especializada en desarrollo web full stack, incluyendo frontend (HTML, CSS, JavaScript), backend (Java, PHP) y bases de datos (MySQL).</p>
+                        <p class="timeline-description">Formación especializada en desarrollo web full stack, incluyendo
+                            frontend (HTML, CSS, JavaScript), backend (Java, PHP) y bases de datos (MySQL).</p>
                     </div>
-                    
-               
+
+
                     <div class="timeline-item">
                         <div class="timeline-date">2025</div>
                         <h3 class="timeline-title">Programación de Aplicaciones para Android con Kotlin</h3>
                         <div class="timeline-location">Udemy</div>
-                        <p class="timeline-description">Curso especializado en desarrollo de aplicaciones móviles para Android utilizando Kotlin.</p>
+                        <p class="timeline-description">Curso especializado en desarrollo de aplicaciones móviles para
+                            Android utilizando Kotlin.</p>
                     </div>
-                    
-                    
+
+
                     <div class="timeline-item">
                         <div class="timeline-date">2023</div>
                         <h3 class="timeline-title">JavaScript Algorithms and Data Structures</h3>
                         <div class="timeline-location">freeCodeCamp</div>
-                        <p class="timeline-description">Certificación en estructuras de datos y algoritmos en JavaScript.</p>
+                        <p class="timeline-description">Certificación en estructuras de datos y algoritmos en
+                            JavaScript.</p>
                     </div>
-                    
-                   
+
+
                     <div class="timeline-item">
                         <div class="timeline-date">2023</div>
                         <h3 class="timeline-title">Santander Copilot e IA generativa</h3>
                         <div class="timeline-location">Santander Universidades</div>
-                        <p class="timeline-description">Curso intensivo sobre inteligencia artificial generativa y su aplicación en el desarrollo de software.</p>
+                        <p class="timeline-description">Curso intensivo sobre inteligencia artificial generativa y su
+                            aplicación en el desarrollo de software.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-  
+
     <section id="skills">
         <div class="container">
             <div class="fade-in">
                 <h2>Habilidades técnicas</h2>
                 <p>Estas son las tecnologías con las que he trabajado recientemente.</p>
-                
+
                 <div class="skills-container">
                     <div class="skill-card">
                         <i class="fab fa-js skill-icon"></i>
@@ -1080,10 +1132,11 @@
         <div class="container">
             <div class="contact-content fade-in">
                 <h2>Contacto</h2>
-                <p>Actualmente estoy buscando nuevas oportunidades. Si tienes alguna pregunta o quieres trabajar conmigo, no dudes en contactarme.</p>
-                
-                
-                
+                <p>Actualmente estoy buscando nuevas oportunidades. Si tienes alguna pregunta o quieres trabajar
+                    conmigo, no dudes en contactarme.</p>
+
+
+
                 <div class="social-links">
                     <a href="mailto:wen.antoniom@gmail.com" class="social-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
@@ -1091,7 +1144,8 @@
                     <a href="https://github.com/AntonioMonzo4" class="social-link" aria-label="GitHub" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/antonio-monzó" class="social-link" aria-label="LinkedIn" target="_blank">
+                    <a href="https://linkedin.com/in/antonio-monzó" class="social-link" aria-label="LinkedIn"
+                        target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://instagram.com/amonzo42" class="social-link" aria-label="Instagram" target="_blank">
@@ -1122,18 +1176,18 @@
     <script>
         // Navegación suave
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // Cerrar menú móvil si está abierto
                     document.querySelector('.nav-links').classList.remove('active');
                     document.querySelector('.hamburger i').classList.remove('fa-times');
@@ -1141,45 +1195,45 @@
                 }
             });
         });
-        
-        
+
+
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-links a');
-        
+
         window.addEventListener('scroll', () => {
             let current = '';
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                
+
                 if (pageYOffset >= (sectionTop - 100)) {
                     current = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
                     link.classList.add('active');
                 }
             });
-            
-            
+
+
             if (window.scrollY > 50) {
                 document.getElementById('header').classList.add('scrolled');
             } else {
                 document.getElementById('header').classList.remove('scrolled');
             }
         });
-        
-        
+
+
         const hamburger = document.querySelector('.hamburger');
         const navLinksContainer = document.querySelector('.nav-links');
-        
+
         hamburger.addEventListener('click', () => {
             navLinksContainer.classList.toggle('active');
-            
+
             const icon = hamburger.querySelector('i');
             if (navLinksContainer.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
@@ -1189,10 +1243,10 @@
                 icon.classList.add('fa-bars');
             }
         });
-        
-        
+
+
         const fadeElements = document.querySelectorAll('.fade-in');
-        
+
         const fadeInObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1200,17 +1254,17 @@
                 }
             });
         }, { threshold: 0.1 });
-        
+
         fadeElements.forEach(element => {
             fadeInObserver.observe(element);
         });
-        
-    
+
+
         const contactForm = document.querySelector('.contact-form');
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            
+
+
             alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
             contactForm.reset();
         });

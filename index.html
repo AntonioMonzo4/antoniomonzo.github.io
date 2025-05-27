@@ -797,6 +797,160 @@
                 margin-bottom: 0.5rem;
             }
         }
+
+
+        .skills-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.skills-category {
+    background: var(--secondary-light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(2, 12, 27, 0.3);
+}
+
+.skills-category h3 {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary);
+}
+
+.skills-category h3 i {
+    font-size: 1.5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.5rem 1rem;
+    background: var(--secondary);
+    border-radius: 8px;
+    transition: var(--transition);
+    text-align: center;
+    min-height: 120px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+    background: var(--secondary-light);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+    
+    .skill-card {
+        padding: 1rem 0.5rem;
+        min-height: 100px;
+    }
+    
+    .skill-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+    
+    .skill-name {
+        font-size: 0.8rem;
+    }
+}
+
+.compact-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skills-group {
+    background: var(--secondary-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.skills-group:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(2, 12, 27, 0.4);
+}
+
+.skills-group h3 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.skills-group h3 i {
+    font-size: 1.2rem;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.skill-tag {
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.skill-tag:hover {
+    background: rgba(100, 255, 218, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .compact-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-group {
+        padding: 1.2rem;
+    }
+}
+
+
     </style>
 </head>
 
@@ -825,128 +979,125 @@
     </header>
 
 
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content fade-in">
-                <div class="hero-text">
-                    <br>
-                    <br>
-                    <h4>Hola, mi nombre es</h4>
-                    <h1>Antonio Monzó.</h1>
-                    <h2>Desarrollo soluciones web y móviles.</h2>
-                    <p>Soy un desarrollador full stack especializado en crear aplicaciones web y móviles modernas,
-                        escalables y centradas en el usuario.</p>
-                    <div class="hero-btns">
-                        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-                        <a href="#contact" class="btn">Contactar</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="img/perfil.jpg" alt="Antonio Monzó">
-                </div>
-                <a href="#about" class="scroll-down">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="about">
-        <div class="container">
-            <div class="about-content fade-in">
-                <div class="about-text">
-                    <h2>Sobre mí</h2>
-                    <p>¡Hola! Soy Antonio, un apasionado desarrollador full stack con experiencia en la creación de
-                        aplicaciones web y móviles modernas y eficientes. Mi enfoque combina el diseño atractivo con la
-                        funcionalidad robusta para ofrecer experiencias de usuario excepcionales.</p>
-                    <p>Me especializo en JavaScript, React, PHP y Kotlin para desarrollo móvil, pero siempre estoy
-                        aprendiendo nuevas tecnologías para mantenerme actualizado en este campo en constante evolución.
-                    </p>
-                    <p>Cuando no estoy programando, disfruto de los videojuegos, la lectura y aprender sobre nuevas
-                        tecnologías.</p>
-
-                    <h3 style="margin-top: 2rem;">Tecnologías que utilizo:</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <span>JavaScript (ES6+)</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <span>PHP</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <span>Kotlin</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <span>MySQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chevron-right"></i>
-                            <span>Git</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-image">
-                    <img src="img/perfil2.jpg" alt="Sobre Antonio Monzó">
+ <section id="hero">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <div class="hero-text">
+                <h4>Hola, soy</h4>
+                <h1>Antonio Monzó</h1>
+                <h2>Desarrollador Full-Stack & Mobile</h2>
+                <p>Creo soluciones digitales innovadoras combinando tecnologías web y móviles para ofrecer experiencias de usuario excepcionales.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Mis Proyectos</a>
+                    <a href="docs/CV_Antonio_Monzó_Ansuátegui.pdf" class="btn" download>Descargar CV</a>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="img/perfil.jpg" alt="Antonio Monzó">
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-
-    <section id="experience">
-        <div class="container">
-            <div class="fade-in">
-                <h2>Experiencia Profesional</h2>
-                <p>Mi trayectoria profesional y los proyectos en los que he participado.</p>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Desarrollador Full Stack</h3>
-                        <span class="experience-date">2023 - Presente</span>
+<section id="about">
+    <div class="container">
+        <div class="about-content fade-in">
+            <div class="about-text">
+                <h2>Sobre mí</h2>
+                <p>Desarrollador Full Stack con formación en Desarrollo de Aplicaciones Web y experiencia en proyectos freelance. Especializado en crear soluciones tecnológicas que resuelven problemas reales con un enfoque en la escalabilidad y el rendimiento.</p>
+                
+                <p>Mi experiencia abarca desde el desarrollo frontend con React hasta el backend con PHP y Java, incluyendo desarrollo móvil con Kotlin. Actualmente estoy ampliando mis conocimientos en inteligencia artificial y su aplicación en el desarrollo de software.</p>
+                
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fas fa-user-tie"></i>
+                        <div>
+                            <h4>Nombre:</h4>
+                            <p>Antonio Monzó</p>
+                        </div>
                     </div>
-                    <div class="experience-company">Freelance</div>
-                    <div class="experience-description">
-                        <p>Desarrollo de aplicaciones web personalizadas para clientes, implementando soluciones
-                            frontend y backend según sus necesidades específicas.</p>
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email:</h4>
+                            <p>web.antoniom@gmail.com</p>
+                        </div>
                     </div>
-                    <div class="experience-tech">
-                        <span class="tech-item">JavaScript</span>
-                        <span class="tech-item">React</span>
-                        <span class="tech-item">PHP</span>
-                        <span class="tech-item">MySQL</span>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación:</h4>
+                            <p>Madrid, España</p>
+                        </div>
                     </div>
                 </div>
+                
+            
+            </div>
+            <div class="about-image">
+                <img src="img/perfil2.jpg" alt="Antonio Monzó">
+            </div>
+        </div>
+    </div>
+</section>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Programador/diseñador web</h3>
-                        <span class="experience-date">2023</span>
-                    </div>
-                    <div class="experience-company">BJDRONES</div>
-                    <div class="experience-description">
-                        <p>Desarrollé por completo el sitio web de la empresa y gestioné los equipos (drones y cámaras),
-                            manteniendo un contacto constante con el cliente.</p>
-                    </div>
-                    <div class="experience-tech">
-                        <span class="tech-item">HTML5</span>
-                        <span class="tech-item">CSS3</span>
-                        <span class="tech-item">JavaScript</span>
-                        <span class="tech-item">Java</span>
-                    </div>
+<section id="experience">
+    <div class="container">
+        <div class="fade-in">
+            <h2>Experiencia Profesional</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-title">Desarrollador Full Stack Freelance</h3>
+                    <span class="experience-date">2023 - Presente</span>
+                </div>
+                <div class="experience-company">Autónomo/Freelance</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Desarrollo de aplicaciones web personalizadas para diversos clientes</li>
+                        <li>Implementación de soluciones frontend con React y JavaScript</li>
+                        <li>Creación de APIs RESTful con PHP y Java</li>
+                        <li>Diseño y optimización de bases de datos MySQL</li>
+                    </ul>
+                </div>
+                <div class="experience-tech">
+                     <span class="tech-item">HTML5</span>
+                    <span class="tech-item">CSS3</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">PHP</span>
+                    <span class="tech-item">Java</span>
+                    <span class="tech-item">MySQL</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-title">Programador/Diseñador Web</h3>
+                    <span class="experience-date">2023</span>
+                </div>
+                <div class="experience-company">BJDRONES</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Desarrollo completo del sitio web corporativo</li>
+                        <li>Gestión de equipos técnicos (drones y cámaras)</li>
+                        <li>Coordinación directa con el cliente para requerimientos</li>
+                        <li>Implementación de funcionalidades interactivas con JavaScript</li>
+                    </ul>
+                </div>
+                <div class="experience-tech">
+                    <span class="tech-item">HTML5</span>
+                    <span class="tech-item">CSS3</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">Java</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <section id="projects">
@@ -1043,7 +1194,7 @@
 
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="img/inteled.png" alt="Pokédex">
+                            <img src="img/inteled2.png" alt="Pokédex">
                         </div>
                         <div class="project-info">
                             <h3>App Itedel</h3>
@@ -1074,7 +1225,7 @@
         <div class="container">
             <div class="fade-in">
                 <h2>Educación y Certificaciones</h2>
-                <p>Mi trayectoria académica y los cursos que han formado mi perfil profesional.</p>
+                <p>Mi trayectoria académica y los cursos que han formado mi perfil profesional. Tienes más cursos e información academica en mi perfil de LinkedIn.</p>
 
                 <div class="timeline">
 
@@ -1118,70 +1269,97 @@
     </section>
 
 
-    <section id="skills">
-        <div class="container">
-            <div class="fade-in">
-                <h2>Habilidades técnicas</h2>
-                <p>Estas son las tecnologías con las que he trabajado recientemente.</p>
+  <section id="skills">
+    <div class="container">
+        <div class="fade-in">
+            <h2>Habilidades Técnicas</h2>
+            <p>Tecnologías y herramientas que utilizo en mis proyectos</p>
 
-                <div class="skills-container">
-                    <div class="skill-card">
-                        <i class="fab fa-js skill-icon"></i>
-                        <span class="skill-name">JavaScript</span>
+            <div class="compact-skills-grid">
+                <!-- Lenguajes -->
+                <div class="skills-group">
+                    <h3><i class="fas fa-code"></i> Lenguajes</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Kotlin</span>
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react skill-icon"></i>
-                        <span class="skill-name">React</span>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skills-group">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Bootstrap</span>
+                       
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-html5 skill-icon"></i>
-                        <span class="skill-name">HTML5</span>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills-group">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skills-tags">
+               
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">API REST</span>
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt skill-icon"></i>
-                        <span class="skill-name">CSS3</span>
+                </div>
+
+                <!-- Mobile -->
+                <div class="skills-group">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">XML</span>
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-java skill-icon"></i>
-                        <span class="skill-name">Java</span>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="skills-group">
+                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Hostinger</span>
+                        <span class="skill-tag">Wordpress</span>
+                        <span class="skill-tag">Scrum</span>
                     </div>
-                    <div class="skill-card">
-                        <i class="fab fa-php skill-icon"></i>
-                        <span class="skill-name">PHP</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-database skill-icon"></i>
-                        <span class="skill-name">MySQL</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-git-alt skill-icon"></i>
-                        <span class="skill-name">Git</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-bootstrap skill-icon"></i>
-                        <span class="skill-name">Bootstrap</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-android skill-icon"></i>
-                        <span class="skill-name">Kotlin</span>
+                </div>
+
+                <!-- Diseño -->
+                <div class="skills-group">
+                    <h3><i class="fas fa-paint-brush"></i> Diseño</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe XD</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Photoshop</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="contact-content fade-in">
-                <h2>Contacto</h2>
-                <p>Actualmente estoy buscando nuevas oportunidades. Si tienes alguna pregunta o quieres trabajar
-                    conmigo, no dudes en contactarme.</p>
-
-
+   <section id="contact">
+    <div class="container">
+        <div class="contact-content fade-in">
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto en mente o quieres saber más sobre mi trabajo? Estoy disponible para oportunidades freelance y colaboraciones.</p>
+            
+            
+        
 
                 <div class="social-links">
-                    <a href="mailto:wen.antoniom@gmail.com" class="social-link" aria-label="Email">
+                    <a href="mailto:web.antoniom@gmail.com" class="social-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                     <a href="https://github.com/AntonioMonzo4" class="social-link" aria-label="GitHub" target="_blank">
